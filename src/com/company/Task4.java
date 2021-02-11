@@ -7,19 +7,20 @@ public class Task4 {
     // Пункт 1 (Ввести три числа с клавиатуры x, y, z)
     Scanner scanner =new Scanner(System.in);
     System.out.println("Введите число x");
-    int x = scanner.nextInt();
+    float x = scanner.nextFloat();
     System.out.println("Введите число y");
-    int y = scanner.nextInt();
+    float y = scanner.nextFloat();
     System.out.println("Введите число z");
-    int z = scanner.nextInt();
+    float z = scanner.nextFloat();
 
     //Пункт 2 (Найти и вывести в консоль среднее арифметическое этих чисел)
-    int sred = (x+y+z)/3;
+    float sred = (x+y+z)/3;
     System.out.println("Среднее арифметическое = "+ sred);
 
     //Пункт 3 (Разделить среднее арифметическое на 2 и округлить в меньшую сторону)
-    int sred2 =(sred/2);
-    System.out.println("sred2 ="+ Math.floor(sred2));
+    float sred2 =(sred/2);
+    sred2 = (float) Math.floor(sred2);
+    System.out.println("sred2 =" + sred2);
 
     //Пункт 4 (Если полученное число больше 3, то вывести на экран сообщение "Программа выполнена корректно")
     if (sred2>3)
