@@ -8,34 +8,34 @@ public class Task7 {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите длину массива");
         int length_mass = scanner.nextInt();
-        int myMassive[] = new int[length_mass];
+        String[] myMassive = new String[length_mass+1];
         System.out.println("Введите элементы массива:");
-
-        for (int i = 0; i < length_mass; i++) {
-            myMassive[i] = scanner.nextInt();
+        System.out.println("Длинна массива ="+ length_mass);
+        for (int i = 0; i < length_mass+1; i++) {
+            myMassive[i] = scanner.nextLine();
         }
         System.out.print("Элементы массива:");
-        for (int i = 0; i < length_mass; i++) {
+        for (int i = 0; i < length_mass+1; i++) {
             System.out.print(" " + myMassive[i]);
         }
         System.out.println();
 
         // Пункт 2 (Сравнить элементы массива с заранее заданными константами x, y, z)
         // Пункт 3 (Если массив содержит хотя бы одну из констант, вывести текст "Данное значение имеется в константах")
-        final int x = 1;
-        final int y = 2;
-        final int z = 3;
+        final String x = "1";
+        final String y = "2";
+        final String z = "3";
 
-        for (int i = 0; i < myMassive.length; i++) {
-            if(myMassive[i]==x)
+        for (int i = 0; i < length_mass; i++) {
+            if(myMassive[i].equals(x))
             {
                 System.out.println("Данное значение имеется в константах x = " + x );
             }
-            if(myMassive[i]==y)
+            if(myMassive[i].equals(y))
             {
                 System.out.println("Данное значение имеется в константах y = " + y );
             }
-            if(myMassive[i]==z)
+            if(myMassive[i].equals(z))
             {
                 System.out.println("Данное значение имеется в константах z = " + z );
             }
