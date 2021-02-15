@@ -26,7 +26,7 @@ public class Task7 {
         final String y = "2";
         final String z = "3";
 
-        for (int i = 0; i < length_mass; i++) {
+        for (int i = 0; i < length_mass+1; i++) {
             if(myMassive[i].equals(x))
             {
                 System.out.println("Данное значение имеется в константах x = " + x );
@@ -39,7 +39,6 @@ public class Task7 {
             {
                 System.out.println("Данное значение имеется в константах z = " + z );
             }
-            }
         }
     }
-
+}
