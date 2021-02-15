@@ -35,7 +35,7 @@ public class Task6 {
                   break;
                 }
 
-                if (type == two)
+                else if (type == two)
                 {
                     System.out.println("Введите число");
                     Scanner scanner3 = new Scanner(System.in);
@@ -47,10 +47,10 @@ public class Task6 {
                     System.out.println("Киллограммы: "+ m1);
                     System.out.println("Центнеры: "+ m2);
                     System.out.println("Тонны: "+ m3);
-                    break;
+
                 }
 
-                if (type == three)
+                else if(type == three)
                 {
                     System.out.println("Введите число");
                     Scanner scanner3 = new Scanner(System.in);
@@ -62,8 +62,9 @@ public class Task6 {
                     System.out.println("Киллограммы: "+ m1);
                     System.out.println("Центнеры: "+ m2);
                     System.out.println("Тонны: "+ m3);
-                    break;
+
                 }
+                break;
 
             case 2:
                 System.out.println("Выберите единицу измерения: 1 - метр, 2 - миля, 3 - ярд, 4 - фут");
@@ -84,10 +85,10 @@ public class Task6 {
                     System.out.println("Мили: "+ d2);
                     System.out.println("Ярды: "+ d3);
                     System.out.println("Футы: "+ d4);
-                    break;
+
                 }
 
-                if (type2 == two)
+                else if (type2 == two)
                 {
                     double d1=value2*1609;
                     double d2=value2;
@@ -97,10 +98,10 @@ public class Task6 {
                     System.out.println("Мили: "+ d2);
                     System.out.println("Ярды: "+ d3);
                     System.out.println("Футы: "+ d4);
-                    break;
+
                 }
 
-                if (type2 == three)
+                else if (type2 == three)
                 {
                     double d1=value2/1.094;
                     double d2=value2/1760;
@@ -110,10 +111,10 @@ public class Task6 {
                     System.out.println("Мили: "+ d2);
                     System.out.println("Ярды: "+ d3);
                     System.out.println("Футы: "+ d4);
-                    break;
+
                 }
 
-                if (type2 == four)
+                else if (type2 == four)
                 {
                     double d1=value2/3.281;
                     double d2=value2/5280;
@@ -123,8 +124,8 @@ public class Task6 {
                     System.out.println("Мили: "+ d2);
                     System.out.println("Ярды: "+ d3);
                     System.out.println("Футы: "+ d4);
-                    break;
                 }
+                break;
         }
         }
     }
