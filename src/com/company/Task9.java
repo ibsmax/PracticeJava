@@ -20,9 +20,6 @@ public class Task9 {
         //Пункт 2 (Посчитайте среднее арифметическое элементов массива)
         for (int i = 0; i < length_mass; i++) {
             System.out.print(" " + myMassive[i]+ " ");
-            if (i == 0) {
-                pred = myMassive[i];
-            }
             pred = sum;
             sum = myMassive[i]+pred;
         }
