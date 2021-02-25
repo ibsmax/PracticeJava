@@ -8,15 +8,18 @@ public class Task14 {
         int min =-19;
         int max = 19;
         int elements_count= 15;
-        double maximum = 0;
-        double minimum = 0;
+
         double myMassive [] = new double[elements_count];
         System.out.print("Элементы массива: ");
-        for (int i=0; i< elements_count; i++)
-        {
-            double per = (double)(Math.random()*((max-min)+1))+min;
+        for (int i=0; i< elements_count; i++) {
+            double per = (double) (Math.random() * ((max - min) + 1)) + min;
             myMassive[i] = per;
-            myMassive[i] = (Double)Math.floor(myMassive[i]*100)/100.0;
+            myMassive[i] = (Double) Math.floor(myMassive[i] * 100) / 100.0;
+        }
+        double maximum = myMassive[0];
+        double minimum = myMassive[0];
+
+        for (int i=0; i< elements_count; i++) {
 
             if(minimum > myMassive[i]){
                 minimum = myMassive[i];
