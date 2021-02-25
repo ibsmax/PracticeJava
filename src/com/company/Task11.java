@@ -17,20 +17,20 @@ public class Task11 {
         int after2 = (int) per2;
 
         // Пункт 3 (Сравнить 2 числа и вывести большее на экран)
-        double after3 = Double.valueOf(after1);
-        int after4 = (int) after3;
-        int resultInt = Math.max(after2,after4);
-        System.out.println("Сравниваемые числа: "+ after4 + " и " + after2);
+        double result = Math.max(per1,per2);
+        System.out.println("Сравниваемые числа: "+ per1 + " и " + per2);
 
         // Пункт 4 (Выведите также меньшее число на экран, предварительно переконвертировать его в тип double)
-        int resultInt2 = Math.min(after2,after4);
-        double result3 = (double) resultInt2;
-        if (after2 == after4)
+        double after3 = Double.valueOf(after1);
+        int after4 = (int) after3;
+        int result2 = Math.min(after2,after4);
+        double result3 = (double) result2;
+        if (per1 == per2)
         {
             System.out.print("Числа равны! ");
         }
         else {
-            System.out.println("Большее число = " + resultInt);
+            System.out.println("Большее число = " + result);
             System.out.println("Меньшее число = " + result3);
         }
     }
