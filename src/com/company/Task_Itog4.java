@@ -29,12 +29,6 @@ public class Task_Itog4 {
                 String otvet2 = scanner.nextLine();
                 res = otvet2.equals(reshenie);
             }
-            if (otvet.equals("Подсказка") && counter > 0 && counter<3) {
-                System.out.println("Подсказка уже недоступна");
-                String otvet3 = scanner.nextLine();
-                res = otvet3.equals(reshenie);
-
-            }
             if (otvet.equals("Подсказка") && counter == 0) {
                 System.out.println("Ответ связан с кибербезопасностью!");
                 String otvet4 = scanner.nextLine();
