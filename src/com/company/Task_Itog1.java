@@ -13,7 +13,6 @@ public class Task_Itog1 {
         System.out.println("Введите текущий курс доллара:");
         double kurs= scanner2.nextDouble();
         double itog = count_money/kurs;
-        DecimalFormat df = new DecimalFormat("#.##");
-        System.out.println("Итого получите долларов = " + df.format(itog));
+        System.out.printf("Итого получите долларов =  " + "%.2f", itog);
     }
 }
