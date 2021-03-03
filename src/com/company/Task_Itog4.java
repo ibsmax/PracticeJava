@@ -13,37 +13,62 @@ public class Task_Itog4 {
         boolean res = otvet.equals(reshenie);
         int counter = 0;
 
-        while (counter < 3) {
+        while (counter < 4) {
             if (res == true) {
                 System.out.println("Правильно!");
-                counter = 3;
+                counter = 4;
             }
             if (res == false && counter == 2) {
                 System.out.println("Обидно, приходи в другой раз");
-                counter = 3;
+                counter = 4;
             }
-            if (res == false && res2 == false && counter < 3) {
+            if (res == false && res2 == false && counter < 4) {
 
                 System.out.println("Подумай еще!");
                 counter++;
                 String otvet2 = scanner.nextLine();
                 res = otvet2.equals(reshenie);
-            }
-            if (otvet.equals("Подсказка") && counter == 0) {
-                System.out.println("Ответ связан с кибербезопасностью!");
-                String otvet4 = scanner.nextLine();
-                res = otvet4.equals(reshenie);
+                res2 = otvet2.equals("Подсказка");
 
-                if (res == true) {
-                    System.out.println("Правильно!");
-                    counter = 3;
+                if (res2 == true) {
+                    System.out.println("Подсказка уже недоступна");
+                    String otvet3 = scanner.nextLine();
+                    res = otvet3.equals(reshenie);
+
+                    if (res == false && counter == 2) {
+                        System.out.println("Обидно, приходи в другой раз");
+                        counter = 4;
+                    }
+
+                    if (res == false && counter < 4) {
+
+                        System.out.println("Подумай еще!");
+                        counter++;
+                        String otvet4 = scanner.nextLine();
+                        res = otvet4.equals(reshenie);
+                        System.out.println("counter="+counter);
+                    }
+
                 }
 
-                if (res == false) {
-                    System.out.println("Обидно, приходи в другой раз");
-                    counter = 3;
+
+                }
+                if (otvet.equals("Подсказка") && counter == 0) {
+                    System.out.println("Ответ связан с кибербезопасностью!");
+                    String otvet4 = scanner.nextLine();
+                    res = otvet4.equals(reshenie);
+
+                    if (res == true) {
+                        System.out.println("Правильно!");
+                        counter = 4;
+                    }
+
+                    if (res == false) {
+                        System.out.println("Обидно, приходи в другой раз");
+                        counter = 4;
+                    }
+
                 }
             }
         }
     }
-}
